@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .underline-thick {
+    text-decoration-thickness: 2px; /* Adjust thickness as needed */
+  }
+}
+
+.flexAct {
+  @apply flex justify-center items-center;
+}
+
+.flexBtw {
+  @apply flex justify-between items-center;
+}
+
+.flexArd {
+  @apply flex justify-around items-center;
+}
+
+.txtMed {
+  @apply text-3xl font-medium;
+}
+
+// $primary-color = text-gray-400

@@ -1,0 +1,24 @@
+.home-body {
+  background-image: linear-gradient( #f0f0f0, #fff);
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+  transition: background-position 0.5s ease-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-body:hover {
+  background-position: 100% 100%;
+}
+
+.btn {
+  @apply py-2 px-4 rounded-md;
+}
+
+.btn-primary {
+  @apply bg-orange-500 text-white;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-600;
+}

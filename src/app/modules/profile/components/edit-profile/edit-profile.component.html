@@ -1,0 +1,35 @@
+<div class="fixed inset-0 z-50 overflow-auto bg-smoke-light flex">
+    <div class="relative p-8 bg-white w-full max-w-md m-auto flex-col flex rounded-lg">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-semibold">Edit Profile</h3>
+        <button (click)="closeMod()" class="text-gray-500">&times;</button>
+      </div>
+      <form (ngSubmit)="onSubmit()">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+          <input [(ngModel)]="profile.name" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="about">About Me</label>
+          <textarea [(ngModel)]="profile.about" id="about" name="about" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="primaryLanguage">Primary Language</label>
+          <input [(ngModel)]="profile.primaryLanguage" id="primaryLanguage" name="primaryLanguage" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="developerStatus">Developer Status</label>
+          <input [(ngModel)]="profile.developerStatus" id="developerStatus" name="developerStatus" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="languagesKnown">Languages Known</label>
+          <textarea [(ngModel)]="profile.languagesKnown" id="languagesKnown" name="languagesKnown" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Save</button>
+          <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" (click)="closeMod()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

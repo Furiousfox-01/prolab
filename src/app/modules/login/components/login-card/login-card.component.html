@@ -1,0 +1,65 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+  <div class="bg-white p-8 rounded-lg shadow-md">
+    <h1
+      class="text-2xl font-bold text-center mb-4"
+      [ngStyle]="{ display: !activeCreate ? '' : 'none' }"
+    >
+      Login
+    </h1>
+    <h1
+      class="text-2xl font-bold text-center mb-4"
+      [ngStyle]="{ display: activeCreate ? '' : 'none' }"
+    >
+      Create Account
+    </h1>
+
+    <app-field
+      [label]="field[0]"
+      [f_type]="f_type[0]"
+      [active]="activeCreate"
+    ></app-field>
+    <app-field
+      [label]="field[1]"
+      [f_type]="field[1]"
+      [active]="true"
+    ></app-field>
+    <app-field
+      [label]="field[2]"
+      [f_type]="field[2]"
+      [active]="activeCreate||activePassword"
+    ></app-field>
+    <app-field
+      [label]="field[3]"
+      [f_type]="field[2]"
+      [active]="activeCreate"
+    ></app-field>
+
+    <app-field
+      [label]="field[4]"
+      [f_type]="f_type[1]"
+      [active]="activeCreate"
+    ></app-field>
+
+    <button
+      type="button"
+      class="btn"
+      (click)="toggleActive()"
+      [ngStyle]="{ display: !activePassword ? '' : 'none' }"
+    >
+      {{ activeCreate ? btnTxt[1] : btnTxt[0] }}
+    </button>
+
+
+    <div class="flexBtw">
+
+    <button type="button" class="btn mt-4" (click)="togglePassword()">login</button>
+    <a
+    href="/login/password-reset"
+    class="text-blue-500 hover:underline text-sm"
+    [ngStyle]="{ display: activePassword ? '' : 'none' }"
+    >Forgot password?</a
+  >
+</div>
+
+  </div>
+</div>

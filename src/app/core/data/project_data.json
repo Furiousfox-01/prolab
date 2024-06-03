@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Project 1",
+    "image": "project1.jpg",
+    "description": "A brief description of Project 1. Highlight its features and purpose.",
+    "techStack": ["JavaScript", "React", "Redux", "Node.js", "Express"]
+  },
+  {
+    "name": "Project 2",
+    "image": "project2.jpg",
+    "description": "A brief description of Project 2. Highlight its features and purpose.",
+    "techStack": ["JavaScript", "Angular", "TypeScript", "Node.js", "RxJS"]
+  },
+  {
+    "name": "Project 3",
+    "image": "project3.jpg",
+    "description": "A brief description of Project 3. Highlight its features and purpose.",
+    "techStack": ["JavaScript", "Vue.js", "Vuex", "Node.js", "Nuxt.js"]
+  },
+  {
+    "name": "Project 4",
+    "image": "project4.jpg",
+    "description": "A brief description of Project 4. Highlight its features and purpose.",
+    "techStack": ["Java", "Android", "Kotlin", "Room", "RxJava"]
+  },
+  {
+    "name": "Project 5",
+    "image": "project5.jpg",
+    "description": "A brief description of Project 5. Highlight its features and purpose.",
+    "techStack": ["Swift", "iOS", "Core Data", "UIKit", "RxSwift"]
+  },
+  {
+    "name": "Project 6",
+    "image": "project6.jpg",
+    "description": "A brief description of Project 6. Highlight its features and purpose.",
+    "techStack": ["JavaScript", "React Native", "Redux", "Expo", "GraphQL"]
+  },
+  {
+    "name": "Project 7",
+    "image": "project7.jpg",
+    "description": "A brief description of Project 7. Highlight its features and purpose.",
+    "techStack": ["Python", "Django", "MySQL", "Celery", "Redis"]
+  },
+  {
+    "name": "Project 8",
+    "image": "project8.jpg",
+    "description": "A brief description of Project 8. Highlight its features and purpose.",
+    "techStack": ["Ruby", "Rails", "PostgreSQL", "Sidekiq", "Redis"]
+  },
+  {
+    "name": "Project 9",
+    "image": "project9.jpg",
+    "description": "A brief description of Project 9. Highlight its features and purpose.",
+    "techStack": ["Java", "Spring Boot", "PostgreSQL", "Apache Kafka", "Redis"]
+  }
+]

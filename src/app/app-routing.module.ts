@@ -22,6 +22,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/profile/profile.module').then((load) => load.ProfileModule),
   },
+  {
+    path: 'project',
+    loadChildren: () =>
+      import('./modules/projects/projects.module').then((load) => load.ProjectsModule),
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,35 @@
+<div class="bg-[#0d1117]">
+  <div class="flexAct gap-3">
+    <div class="w-32 h-32 mb-4 rounded-full bg-gray-300 overflow-hidden">
+      <img class="w-full h-full object-cover" src="..." alt="Profile Picture" />
+    </div>
+    <h1 class="text-2xl font-bold text-gray-400">User1</h1>
+  </div>
+
+  <div class="container mx-auto py-12 grid grid-cols-2 gap-3">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
+      <h2 class="text-xl font-semibold text-white mb-4">Project Details</h2>
+      <p class="text-gray-400">
+        <strong>Type:</strong> {{ project.project_type }}
+      </p>
+      <p class="text-gray-400">
+        <strong>Status:</strong> {{ project.project_status }}
+      </p>
+      <p class="text-gray-400">
+        <strong>Duration:</strong> {{ project.project_duration }}
+      </p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
+      <h2 class="text-xl font-semibold text-white mb-4">Project Members</h2>
+      <ul class="list-disc list-inside">
+        <li
+          class="text-gray-400"
+          *ngFor="let member of project.project_members"
+        >
+          {{ member.name }} - {{ member.role }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

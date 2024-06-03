@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
   styleUrl: './body.component.scss'
 })
 export class BodyComponent {
+naviToProjects() {
+  this.router.navigate(['/project'])
+
+}
 
   constructor(private router:Router){}
 naviToProfile() {
